@@ -1,0 +1,46 @@
+{
+  "services": [
+    {
+      "id": "shau-kei-wan-western-market",
+      "name": "筲箕灣 ↔ 西港城",
+      "origin": "shau-kei-wan-terminus",
+      "destination": "western-market-terminus",
+      "vehicleCount": 2
+    },
+    {
+      "id": "shau-kei-wan-happy-valley",
+      "name": "筲箕灣 ↔ 跑馬地",
+      "origin": "shau-kei-wan-terminus",
+      "destination": "happy-valley-terminus",
+      "vehicleCount": 2
+    },
+    {
+      "id": "north-point-shek-tong-tsui",
+      "name": "北角 ↔ 石塘咀",
+      "origin": "north-point-terminus",
+      "destination": "shek-tong-tsui-terminus",
+      "vehicleCount": 2
+    },
+    {
+      "id": "causeway-bay-shek-tong-tsui",
+      "name": "銅鑼灣 ↔ 石塘咀",
+      "origin": "causeway-bay-terminus",
+      "destination": "shek-tong-tsui-terminus",
+      "vehicleCount": 2
+    },
+    {
+      "id": "happy-valley-kennedy-town",
+      "name": "跑馬地 ↔ 堅尼地城",
+      "origin": "happy-valley-terminus",
+      "destination": "kennedy-town-terminus",
+      "vehicleCount": 2
+    },
+    {
+      "id": "shau-kei-wan-kennedy-town",
+      "name": "筲箕灣 ↔ 堅尼地城",
+      "origin": "shau-kei-wan-terminus",
+      "destination": "kennedy-town-terminus",
+      "vehicleCount": 2
+    }
+  ]
+}

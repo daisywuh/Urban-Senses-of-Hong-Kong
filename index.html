@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="以粵語歌與香港影視記憶，重新點亮香港城市空間的互動地圖。">
+
+  <title>Urban Senses of Hong Kong</title>
+
+  <!-- MapLibre 地圖樣式 -->
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5/dist/maplibre-gl.css">
+
+  <!-- Pannellum 全景樣式 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.css">
+
+  <!-- 新增食物圖標 -->
+  <script src="./food-icons.js" defer></script>
+
+  <!-- 網站程式 -->
+  <script src="./app.js" defer></script>
+
+
+  <!-- 網站樣式 -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- MapLibre 地圖程式 -->
+  <script src="https://unpkg.com/maplibre-gl@5/dist/maplibre-gl.js"></script>
+
+  <!-- Pannellum 全景程式 -->
+  <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.js"></script>
+</head>
+
+<body>
+  <!-- ========================================
+       歷史 360° 全景時光機
+  ========================================= -->
+  <section id="historical-panorama" class="historical-panorama" aria-hidden="true" aria-label="歷史360度全景">
+    <div id="historical-panorama-viewer" class="historical-panorama-viewer"></div>
+
+    <header class="historical-panorama-header">
+      <div class="historical-panorama-heading">
+        <p>城市記憶 · 時光機</p>
+
+        <h2 id="historical-panorama-title">
+          過去的香港
+        </h2>
+
+        <span id="historical-panorama-year">
+          歷史場景
+        </span>
+      </div>
+
+      <button id="close-historical-panorama" class="close-historical-panorama" type="button">
+        返回地圖
+      </button>
+    </header>
+
+    <div class="historical-panorama-hint">
+      <span aria-hidden="true">↔</span>
+      拖動畫面環顧街道，使用滾輪放大或縮小
+    </div>
+
+    <div id="historical-panorama-loading" class="historical-panorama-loading">
+      <span class="panorama-loading-ring"></span>
+
+      <p>
+        正在回到過去……
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================================
+       網站主要內容
+  ========================================= -->
+  <main class="page">
+    <!-- 網站標題 -->
+    <header class="page-header">
+      <div class="page-title-group">
+        <p class="page-eyebrow">
+          香港城市聲音檔案
+        </p>
+
+        <h1>
+          Urban Senses of Hong Kong
+        </h1>
+
+        <p class="page-subtitle">
+          從廣東歌與銀幕記憶出發，共同點亮香港的城市故事。
+        </p>
+      </div>
+
+      <div class="light-progress" aria-label="地點點亮進度">
+        <span>
+          我的城市記憶
+        </span>
+
+        <strong id="light-progress-text">
+          已點亮 0 個地點
+        </strong>
+
+        <div class="light-progress-track" aria-hidden="true">
+          <span id="light-progress-bar"></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========================================
+         互動地圖
+    ========================================= -->
+    <section class="map-shell" aria-label="香港城市記憶互動地圖">
+      <div id="map" role="application" aria-label="香港歌曲與影視地點地圖"></div>
+
+      <!-- 地圖載入提示 -->
+      <div id="map-loading" class="map-loading">
+        <span class="map-loading-symbol" aria-hidden="true"></span>
+
+        <p>
+          正在展開香港城市記憶……
+        </p>
+      </div>
+
+      <!-- 地圖圖例與內容篩選 -->
+      <nav class="map-legend" aria-label="篩選地圖內容">
+        <button class="map-filter-button map-legend-filter is-active" type="button" data-filter="all"
+          aria-pressed="true">
+          全部
+        </button>
+
+        <button class="map-filter-button map-legend-filter" type="button" data-filter="song" aria-pressed="false">
+          <i class="legend-dot legend-song" aria-hidden="true"></i>
+
+          <span>
+            粵語歌曲
+          </span>
+        </button>
+
+        <button class="map-filter-button map-legend-filter" type="button" data-filter="screen" aria-pressed="false">
+          <i class="legend-dot legend-screen" aria-hidden="true"></i>
+
+          <span>
+            影視記憶
+          </span>
+        </button>
+
+        <button class="map-filter-button map-legend-filter" type="button" data-filter="food" aria-pressed="false">
+          <i class="legend-dot legend-food" aria-hidden="true"></i>
+
+          <span>
+            城市味道
+          </span>
+        </button>
+
+        <button class="map-filter-button map-legend-filter" type="button" data-filter="community" aria-pressed="false">
+          <i class="legend-dot legend-personal" aria-hidden="true"></i>
+
+          <span>
+            共同記憶
+          </span>
+        </button>
+
+        <button class="map-filter-button map-legend-filter" type="button" data-filter="history" aria-pressed="false">
+          <i class="legend-history" aria-hidden="true">
+            昔
+          </i>
+
+          <span>
+            昔日場景
+          </span>
+        </button>
+      </nav>
+
+      <!-- ========================================
+           地點檔案列表
+      ========================================= -->
+      <aside id="archive-panel" class="archive-panel is-collapsed" aria-label="城市檔案地點列表">
+        <header class="archive-panel-header">
+          <div>
+            <span>
+              城市記憶索引
+            </span>
+
+            <strong>
+              地點檔案
+            </strong>
+          </div>
+
+          <button id="archive-panel-toggle" class="archive-panel-toggle" type="button" aria-expanded="false"
+            aria-controls="archive-list">
+            展開
+          </button>
+        </header>
+
+        <div class="archive-filter">
+          <button class="archive-filter-button is-active" type="button" data-filter="all" aria-pressed="true">
+            全部
+          </button>
+
+          <button class="archive-filter-button" type="button" data-filter="song" aria-pressed="false">
+            歌曲
+          </button>
+
+          <button class="archive-filter-button" type="button" data-filter="screen" aria-pressed="false">
+            影視
+          </button>
+
+          <button class="archive-filter-button" type="button" data-filter="food" aria-pressed="false">
+            味道
+          </button>
+
+          <button class="archive-filter-button" type="button" data-filter="history" aria-pressed="false">
+            昔日
+          </button>
+
+          <button class="archive-filter-button" type="button" data-filter="community" aria-pressed="false">
+            共同點亮
+          </button>
+        </div>
+
+        <div id="archive-list" class="archive-list"></div>
+      </aside>
+
+      <!-- ========================================
+           地點故事面板
+      ========================================= -->
+      <aside id="story-panel" class="story-panel" aria-hidden="true" aria-label="地點故事">
+        <button id="story-panel-close" class="story-panel-close" type="button" aria-label="關閉地點故事">
+          ×
+        </button>
+
+        <header class="story-heading">
+          <p id="story-category" class="story-category">
+            城市聲音檔案
+          </p>
+
+          <h2 id="story-title"></h2>
+
+          <p id="story-meta" class="story-meta"></p>
+        </header>
+
+        <!-- 歌詞、台詞、味道或記憶 -->
+        <section class="story-section">
+          <h3 id="story-excerpt-heading">
+            歌詞摘錄
+          </h3>
+
+          <blockquote id="story-excerpt" class="story-excerpt"></blockquote>
+        </section>
+
+        <!-- 地點介紹 -->
+        <section class="story-section">
+          <h3>
+            城市記憶
+          </h3>
+
+          <p id="story-description" class="story-description"></p>
+        </section>
+
+        <!-- Spotify 官方音樂播放器 -->
+        <section id="story-music-section" class="story-section story-music-section" hidden>
+          <div class="story-music-heading">
+            <h3>
+              城市聲音
+            </h3>
+
+            <span>
+              Spotify 官方內容
+            </span>
+          </div>
+
+          <div id="story-spotify-player" class="story-spotify-player"></div>
+
+          <p class="story-music-credit">
+            音樂由 Spotify 官方播放器提供，本網站不儲存或重新上載歌曲音檔。
+          </p>
+        </section>
+
+        <!-- 現在與過去 -->
+        <section id="story-time-section" class="story-section story-time-section">
+          <div class="story-time-heading">
+            <h3>
+              時間影像
+            </h3>
+
+            <div class="time-switch" role="group" aria-label="切換現在與過去影像">
+              <button id="show-current-image" class="time-switch-button is-active" type="button">
+                現在
+              </button>
+
+              <button id="show-past-image" class="time-switch-button" type="button">
+                時光機
+              </button>
+            </div>
+          </div>
+
+          <!-- 地點圖片畫廊 -->
+          <figure id="story-image-frame" class="story-image-frame">
+            <img id="story-image" class="story-image" src="" alt="">
+
+            <!-- 沒有圖片時的預留畫面 -->
+            <div id="story-image-placeholder" class="story-image-placeholder">
+              <span>
+                影像整理中
+              </span>
+
+              <p>
+                這個地方的現在與過去，將會在這裡相遇。
+              </p>
+            </div>
+
+            <!-- 上一張照片 -->
+            <button id="story-previous-photo" class="story-photo-arrow story-photo-arrow-previous" type="button"
+              aria-label="上一張照片" hidden>
+              ‹
+            </button>
+
+            <!-- 下一張照片 -->
+            <button id="story-next-photo" class="story-photo-arrow story-photo-arrow-next" type="button"
+              aria-label="下一張照片" hidden>
+              ›
+            </button>
+
+            <!-- 照片數量 -->
+            <span id="story-photo-count" class="story-photo-count" hidden>
+              1 / 1
+            </span>
+
+            <!-- 圖片說明 -->
+            <figcaption id="story-image-caption"></figcaption>
+          </figure>
+
+          <!-- 添加地點照片 -->
+          <div class="story-photo-toolbar">
+            <div class="story-photo-toolbar-text">
+              <strong>
+                地點照片
+              </strong>
+
+              <span>
+                加入你在這個地方拍攝的影像
+              </span>
+            </div>
+
+            <div class="story-photo-toolbar-actions">
+              <input id="story-add-photo-input" class="story-add-photo-input" type="file"
+                accept="image/jpeg,image/png,image/webp,image/gif" multiple hidden>
+
+              <button id="story-delete-photo-button" class="story-delete-photo-button" type="button" hidden>
+                刪除照片
+              </button>
+
+              <button id="story-add-photo-button" class="story-add-photo-button" type="button">
+                <span aria-hidden="true">
+                  ＋
+                </span>
+
+                添加照片
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 地點操作 -->
+        <footer class="story-actions">
+          <button id="story-audio-button" class="story-action-button story-audio-button" type="button" disabled>
+            <span aria-hidden="true">
+              ▶
+            </span>
+
+            聆聽城市聲音
+          </button>
+
+          <button id="story-light-button" class="story-action-button story-light-button" type="button">
+            點亮這裡
+          </button>
+
+          <button id="edit-contribution-button" class="story-action-button edit-contribution-button" type="button"
+            hidden>
+            修改我的記憶
+          </button>
+
+          <button id="delete-contribution-button" class="story-action-button delete-contribution-button" type="button"
+            hidden>
+            刪除我的記憶
+          </button>
+        </footer>
+      </aside>
+
+      <!-- ========================================
+           《我們的電車上》歌詞卡
+      ========================================= -->
+      <section id="tram-lyric-card" class="tram-lyric-card" aria-hidden="true" aria-live="polite">
+        <div class="tram-lyric-icon">
+          <span aria-hidden="true">
+            叮
+          </span>
+        </div>
+
+        <div class="tram-lyric-content">
+          <span id="tram-lyric-location">
+            港島電車
+          </span>
+
+          <strong>
+            《我們的電車上》
+          </strong>
+
+          <p id="tram-lyric-text">
+            電車正沿着香港島緩慢前行。
+          </p>
+        </div>
+
+        <div class="tram-card-actions">
+          <!-- Spotify 播放連結 -->
+          <a class="tram-spotify-link" href="https://open.spotify.com/track/0pmvOA7ExmPs5JrTsMsfBh" target="_blank"
+            rel="noopener noreferrer" aria-label="在 Spotify 播放《我們的電車上（走過下世紀）》" title="Spotify 播放">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="12"></circle>
+
+              <path d="M6.3 9.1 C10.1 7.9 15.5 8.2 18.5 9.9"></path>
+
+              <path d="M7 12.2 C10.2 11.2 14.7 11.5 17.4 13"></path>
+
+              <path d="M7.8 15 C10.5 14.2 14 14.4 16.4 15.7"></path>
+            </svg>
+
+            <span>
+              播放
+            </span>
+          </a>
+
+          <button id="tram-follow-button" class="tram-follow-button" type="button" aria-pressed="false">
+            跟隨電車
+          </button>
+        </div>
+      </section>
+
+      <!-- 新增城市記憶 -->
+      <button id="open-contribution-button" class="contribution-floating-button" type="button">
+        <span aria-hidden="true">
+          ＋
+        </span>
+
+        點亮新地點
+      </button>
+    </section>
+  </main>
+
+  <!-- ========================================
+       用戶投稿視窗
+  ========================================= -->
+  <section id="contribution-dialog" class="contribution-dialog" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-labelledby="contribution-title">
+    <div class="contribution-backdrop" data-close-contribution></div>
+
+    <div class="contribution-card">
+      <button id="close-contribution-button" class="contribution-close" type="button" aria-label="關閉新增地點視窗">
+        ×
+      </button>
+
+      <header class="contribution-heading">
+        <p>
+          共同點亮香港
+        </p>
+
+        <h2 id="contribution-title">
+          加入你的城市記憶
+        </h2>
+
+        <span id="contribution-subtitle">
+          在地圖上選擇位置，留下一張照片、一段歌詞或一句台詞。
+        </span>
+      </header>
+
+      <form id="contribution-form">
+        <div class="form-row">
+          <label>
+            地點名稱
+
+            <input id="contribution-location" name="location" type="text" placeholder="例如：深水埗鴨寮街" required>
+
+            <button id="find-contribution-location" class="find-location-button" type="button">
+              自動尋找地點
+            </button>
+
+            <p id="contribution-location-status" class="location-search-status" aria-live="polite">
+              輸入店名後，系統會自動在香港地圖中尋找。
+            </p>
+
+          </label>
+
+          <label>
+            記憶類型
+
+            <select id="contribution-media-type" name="mediaType">
+              <option value="song">
+                粵語歌曲
+              </option>
+
+              <option value="film">
+                電影
+              </option>
+
+              <option value="television">
+                電視劇
+              </option>
+
+              <option value="food">
+                城市味道
+              </option>
+
+              <option value="personal">
+                個人記憶
+              </option>
+            </select>
+          </label>
+
+          <label>
+            地點形狀
+
+            <select id="contribution-highlight-type" name="highlightType">
+              <option value="street">
+                街道
+              </option>
+
+              <option value="area">
+                區域、公園或山
+              </option>
+
+              <option value="point">
+                單一地標
+              </option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          美食標誌
+
+          <select id="contribution-food-type" name="foodType">
+            <option value="pineapple-bun">
+              菠蘿包
+            </option>
+
+            <option value="siu-mai">
+              魚肉燒賣
+            </option>
+
+            <option value="satay-beef-noodles">
+              沙爹牛肉麵
+            </option>
+
+            <option value="baked-tomato-rice">
+              焗鮮茄飯
+            </option>
+
+            <option value="milk-tea-red-bean-ice">
+              港式奶茶＋紅豆冰
+            </option>
+
+            <option value="local-food">
+              其他香港味道
+            </option>
+          </select>
+        </label>
+
+        <label>
+          名稱
+
+          <input id="contribution-title-input" name="title" type="text" placeholder=" ">
+        </label>
+
+        <label>
+          歌詞、台詞、味道或記憶
+
+          <textarea id="contribution-excerpt" name="excerpt" rows="4" placeholder="寫下一句與這個地方有關的文字……"
+            required></textarea>
+        </label>
+
+        <label>
+          上傳你拍攝的照片
+
+          <input id="contribution-photo" name="photo" type="file" accept="image/*">
+        </label>
+
+        <div id="contribution-photo-preview" class="contribution-photo-preview" aria-hidden="true">
+          <img id="contribution-preview-image" src="" alt="準備上傳的照片預覽">
+        </div>
+
+        <fieldset class="coordinate-fields">
+          <legend>
+            地圖位置
+          </legend>
+
+          <p>
+            打開這個視窗後，再點擊地圖即可選擇位置。
+          </p>
+
+          <div class="form-row">
+            <label>
+              經度
+
+              <input id="contribution-longitude" name="longitude" type="number" step="any" readonly required>
+            </label>
+
+            <label>
+              緯度
+
+              <input id="contribution-latitude" name="latitude" type="number" step="any" readonly required>
+            </label>
+          </div>
+        </fieldset>
+
+        <button id="save-contribution-button" class="save-contribution-button" type="submit">
+          點亮這個地方
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- 頁面通知 -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- ========================================
+       首次使用引導
+  ========================================= -->
+  <div id="welcome-guide" class="welcome-guide" role="dialog" aria-modal="true" aria-labelledby="welcome-guide-title"
+    aria-describedby="welcome-guide-description" hidden>
+    <div class="welcome-guide-backdrop"></div>
+
+    <section class="welcome-guide-card">
+      <button id="close-welcome-guide" class="welcome-guide-close" type="button" aria-label="關閉使用引導">
+        ×
+      </button>
+
+      <p class="welcome-guide-eyebrow">
+        香港城市聲音檔案
+      </p>
+
+      <h2 id="welcome-guide-title">
+        聆聽一座城市的記憶
+      </h2>
+
+      <p id="welcome-guide-description" class="welcome-guide-introduction">
+        從粵語歌詞中的地名出發，在地圖上探索香港的聲音、味道、銀幕記憶與城市變遷。
+      </p>
+
+      <div class="welcome-guide-features">
+        <article class="welcome-guide-feature">
+          <span class="welcome-feature-symbol welcome-feature-song" aria-hidden="true"></span>
+
+          <div>
+            <h3>
+              點擊城市標籤
+            </h3>
+
+            <p>
+              點擊地點標記，打開歌曲、影像、味道與城市故事；小碗米飯及數字代表附近有多個味道地點。
+            </p>
+          </div>
+        </article>
+
+        <article class="welcome-guide-feature">
+          <span class="welcome-feature-symbol welcome-feature-transport" aria-hidden="true">
+            叮
+          </span>
+
+          <div>
+            <h3>
+              跟隨城市交通
+            </h3>
+
+            <p>
+              乘搭電車與天星小輪，沿著歌詞穿梭香港。
+            </p>
+          </div>
+        </article>
+
+        <article class="welcome-guide-feature">
+          <span class="welcome-feature-symbol welcome-feature-time" aria-hidden="true">
+            昔
+          </span>
+
+          <div>
+            <h3>
+              切換現在與昔日
+            </h3>
+
+            <p>
+              進入 AI 協作重構的歷史全景，觀看城市空間的變化。
+            </p>
+          </div>
+        </article>
+
+        <article class="welcome-guide-feature">
+          <span class="welcome-feature-symbol welcome-feature-memory" aria-hidden="true">
+            ＋
+          </span>
+
+          <div>
+            <h3>
+              留下你的記憶
+            </h3>
+
+            <p>
+              在地圖上點亮一個地方，加入屬於你的香港故事。
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <button id="start-exploring" class="welcome-guide-start" type="button">
+        開始探索
+
+        <span aria-hidden="true">
+          →
+        </span>
+      </button>
+
+      <p class="welcome-guide-note">
+        之後可點擊地圖右上角的「？」再次查看
+      </p>
+    </section>
+  </div>
+
+  <!-- ========================================
+       關於計劃與資料來源
+  ========================================= -->
+  <div id="about-project-dialog" class="about-project-dialog" role="dialog" aria-modal="true"
+    aria-labelledby="about-project-title" hidden>
+    <div class="about-project-backdrop" data-close-about-project></div>
+
+    <article class="about-project-card">
+      <button id="close-about-project" class="about-project-close" type="button" aria-label="關閉關於計劃">
+        ×
+      </button>
+
+      <header class="about-project-header">
+        <p>
+          URBAN SENSES OF HONG KONG
+        </p>
+
+        <h2 id="about-project-title">
+          關於這座城市聲音檔案
+        </h2>
+
+        <span>
+          音樂、地景與記憶的互動探索
+        </span>
+      </header>
+
+      <div class="about-project-content">
+        <!-- 計劃介紹 -->
+        <section class="about-project-section">
+          <div class="about-section-number" aria-hidden="true">
+            01
+          </div>
+
+          <div>
+            <h3>
+              計劃緣起
+            </h3>
+
+            <p>
+              《Urban Senses of Hong Kong》從粵語流行音樂中的地名出發，將歌曲、街道、交通、味道、影視作品與城市記憶，連結在同一張互動地圖上。
+            </p>
+
+            <p>
+              觀眾可以沿著歌詞探索香港，在現在與昔日之間切換，亦可以加入自己拍攝的照片與城市記憶。
+            </p>
+          </div>
+        </section>
+
+        <!-- 內容整理 -->
+        <section class="about-project-section">
+          <div class="about-section-number" aria-hidden="true">
+            02
+          </div>
+
+          <div>
+            <h3>
+              內容與地點
+            </h3>
+
+            <p>
+              地圖中的歌曲地點依照歌詞、作品內容及相關街道資料整理。部分歌曲同時涉及多個地區，地圖會選擇最適合呈現其空間敘事的地點，或將多首歌曲整合在同一個地點標籤中。
+            </p>
+
+            <ul class="about-project-tags">
+              <li>
+                粵語歌曲
+              </li>
+
+              <li>
+                影視記憶
+              </li>
+
+              <li>
+                城市味道
+              </li>
+
+              <li>
+                電車與渡輪
+              </li>
+
+              <li>
+                昔日香港
+              </li>
+
+              <li>
+                共同記憶
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- AI 歷史影像 -->
+        <section class="about-project-section">
+          <div class="about-section-number" aria-hidden="true">
+            03
+          </div>
+
+          <div>
+            <h3>
+              AI 協作歷史重構
+            </h3>
+
+            <p>
+              部分昔日場景為 AI 協作重構影像。製作過程參考歷史照片、報刊、地圖及文字資料，再透過生成式人工智能重構街道的建築、交通與生活氛圍。
+            </p>
+
+            <aside class="about-ai-notice">
+              <strong>
+                影像說明
+              </strong>
+
+              <p>
+                AI 重構場景並非歷史原照，亦不應被視為完全準確的歷史記錄。它們是以資料研究為基礎，對城市記憶進行的視覺化想像。
+              </p>
+            </aside>
+          </div>
+        </section>
+
+        <!-- 主要資料來源 -->
+        <section class="about-project-section">
+          <div class="about-section-number" aria-hidden="true">
+            04
+          </div>
+
+          <div>
+            <h3>
+              主要資料來源
+            </h3>
+
+            <p>
+              不同地點使用的參考資料有所不同，主要包括以下公共檔案、地圖與媒體平台。
+            </p>
+
+            <div class="about-source-grid">
+              <a href="https://www.hkmemory.hk/" target="_blank" rel="noopener noreferrer">
+                <strong>
+                  香港記憶
+                </strong>
+
+                <span>
+                  歷史照片與城市文化資料
+                </span>
+              </a>
+
+              <a href="https://mmis.hkpl.gov.hk/" target="_blank" rel="noopener noreferrer">
+                <strong>
+                  香港公共圖書館
+                </strong>
+
+                <span>
+                  多媒體資訊及報刊資料
+                </span>
+              </a>
+
+              <a href="https://digitalrepository.lib.hku.hk/" target="_blank" rel="noopener noreferrer">
+                <strong>
+                  香港大學數碼典藏
+                </strong>
+
+                <span>
+                  歷史影像與研究資料
+                </span>
+              </a>
+
+              <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">
+                <strong>
+                  OpenStreetMap
+                </strong>
+
+                <span>
+                  開放地圖與地理資料
+                </span>
+              </a>
+
+              <a href="https://openfreemap.org/" target="_blank" rel="noopener noreferrer">
+                <strong>
+                  OpenFreeMap
+                </strong>
+
+                <span>
+                  互動地圖底圖服務
+                </span>
+              </a>
+
+              <a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">
+                <strong>
+                  Spotify
+                </strong>
+
+                <span>
+                  官方嵌入式音樂播放器
+                </span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- 版權與用戶內容 -->
+        <section class="about-project-section">
+          <div class="about-section-number" aria-hidden="true">
+            05
+          </div>
+
+          <div>
+            <h3>
+              媒體與用戶內容
+            </h3>
+
+            <p>
+              音樂由 Spotify 官方播放器提供，本網站不儲存或重新上載歌曲音檔。影視圖片僅用於非商業性的文化研究、情境說明與作品展示，相關權利歸原權利持有人所有。
+            </p>
+
+            <p>
+              由觀眾加入的地點、文字與照片，目前只儲存在使用者自己的瀏覽器中，不會自動上傳到公共伺服器。
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <footer class="about-project-footer">
+        <span>
+          以聲音重新閱讀香港
+        </span>
+
+        <button id="about-open-guide" type="button">
+          查看使用引導
+        </button>
+      </footer>
+    </article>
+  </div>
+
+  <!-- ========================================
+       右上角幫助中心
+  ========================================= -->
+  <div class="help-centre">
+    <button id="open-help-menu" class="open-welcome-guide" type="button" aria-label="開啟幫助選單" aria-expanded="false"
+      aria-controls="help-menu" title="使用說明">
+      ?
+    </button>
+
+    <div id="help-menu" class="help-menu" hidden>
+      <button id="help-open-guide" class="help-menu-item" type="button">
+        <span class="help-menu-icon help-guide-icon" aria-hidden="true">
+          →
+        </span>
+
+        <span>
+          <strong>
+            使用引導
+          </strong>
+
+          <small>
+            查看地圖探索方式
+          </small>
+        </span>
+      </button>
+
+      <button id="help-open-about" class="help-menu-item" type="button">
+        <span class="help-menu-icon help-about-icon" aria-hidden="true">
+          i
+        </span>
+
+        <span>
+          <strong>
+            關於此計劃
+          </strong>
+
+          <small>
+            計劃理念與資料來源
+          </small>
+        </span>
+      </button>
+    </div>
+  </div>
+</body>
+
+</html>

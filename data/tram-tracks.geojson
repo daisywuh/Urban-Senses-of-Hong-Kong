@@ -1,0 +1,155 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tram-main-line",
+        "name": "港島電車主線",
+        "transport": "tram",
+        "section": "main"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [114.1277, 22.2849],
+          [114.1328, 22.2855],
+          [114.1373, 22.2863],
+          [114.1426, 22.2866],
+          [114.1478, 22.2867],
+          [114.1523, 22.2861],
+          [114.1569, 22.2843],
+          [114.1611, 22.2817],
+          [114.1655, 22.2789],
+          [114.1699, 22.2774],
+          [114.1744, 22.2773],
+          [114.1797, 22.2783],
+          [114.1845, 22.2793],
+          [114.1895, 22.2809],
+          [114.1944, 22.2845],
+          [114.1997, 22.2887],
+          [114.2047, 22.2911],
+          [114.2102, 22.2877],
+          [114.2153, 22.2843],
+          [114.2201, 22.2821],
+          [114.2245, 22.2795],
+          [114.2283, 22.2773]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "happy-valley-loop",
+        "name": "跑馬地電車環線",
+        "transport": "tram",
+        "section": "happy-valley"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [114.1845, 22.2793],
+          [114.1831, 22.2768],
+          [114.1824, 22.2739],
+          [114.1826, 22.2712],
+          [114.1843, 22.2696],
+          [114.1863, 22.2716],
+          [114.1865, 22.2742],
+          [114.1857, 22.2768],
+          [114.1845, 22.2793]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kennedy-town-terminus",
+        "name": "堅尼地城",
+        "transport": "tram",
+        "pointType": "terminus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.1277, 22.2849]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "western-market-terminus",
+        "name": "西港城",
+        "transport": "tram",
+        "pointType": "terminus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.1506, 22.2865]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shek-tong-tsui-terminus",
+        "name": "石塘咀",
+        "transport": "tram",
+        "pointType": "terminus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.1365, 22.2863]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "causeway-bay-terminus",
+        "name": "銅鑼灣",
+        "transport": "tram",
+        "pointType": "terminus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.1845, 22.2793]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "north-point-terminus",
+        "name": "北角",
+        "transport": "tram",
+        "pointType": "terminus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.2004, 22.2892]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "happy-valley-terminus",
+        "name": "跑馬地",
+        "transport": "tram",
+        "pointType": "terminus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.1843, 22.2696]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shau-kei-wan-terminus",
+        "name": "筲箕灣",
+        "transport": "tram",
+        "pointType": "terminus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.2283, 22.2773]
+      }
+    }
+  ]
+}

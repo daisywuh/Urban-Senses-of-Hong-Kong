@@ -1,0 +1,82 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tsim-sha-tsui-central",
+        "name": "尖沙咀 ↔ 中環",
+        "transport": "ferry",
+        "featureType": "route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [114.1687, 22.294],
+          [114.1676, 22.2922],
+          [114.1656, 22.2902],
+          [114.1635, 22.2889],
+          [114.1617, 22.288]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tsim-sha-tsui-wan-chai",
+        "name": "尖沙咀 ↔ 灣仔",
+        "transport": "ferry",
+        "featureType": "route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [114.1687, 22.294],
+          [114.1702, 22.292],
+          [114.1721, 22.2896],
+          [114.174, 22.287],
+          [114.1758, 22.2849]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tsim-sha-tsui-pier",
+        "name": "尖沙咀天星碼頭",
+        "transport": "ferry",
+        "featureType": "pier"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.1687, 22.294]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "central-pier",
+        "name": "中環天星碼頭",
+        "transport": "ferry",
+        "featureType": "pier"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.1617, 22.288]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "wan-chai-pier",
+        "name": "灣仔天星碼頭",
+        "transport": "ferry",
+        "featureType": "pier"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.1758, 22.2849]
+      }
+    }
+  ]
+}

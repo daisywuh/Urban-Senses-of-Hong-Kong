@@ -1,0 +1,1451 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15806,
+          22.28194
+        ]
+      },
+      "properties": {
+        "id": "central-justin-lo",
+        "song": "中環",
+        "singer": "側田",
+        "location": "香港島 · 中環",
+        "shortLocation": "中環",
+        "year": "2008",
+        "lyric": "在最擠塞的市區，人海之中無數散聚\n任你為了它追隨，仍停滯到中區\n大社會，愛什麼也失去\n華麗的商店，霓虹的堡壘\n就算你不停流淚，看感情流連似水",
+        "status": "published",
+        "mediaType": "song",
+        "songLink": "https://open.spotify.com/track/72MmVhmgASmFx6Wy9Xm7mV",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/72MmVhmgASmFx6Wy9Xm7mV",
+        "themeColor": "#80728f",
+        "highlightType": "point",
+        "focusZoom": 15.7,
+        "pastSceneEnabled": true,
+        "pastSceneType": "panorama",
+        "pastSceneYear": "1980至1990年代",
+        "pastPanorama": "./assets/panoramas/central-past.png",
+        "pastCaption": "昔日中環",
+        "panoramaPitch": -5,
+        "panoramaYaw": 0,
+        "panoramaHfov": 102
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1437,
+          22.2778
+        ]
+      },
+      "properties": {
+        "id": "finlay-road",
+        "song": "芬梨道上",
+        "singer": "楊千嬅",
+        "location": "太平山頂 · 芬梨道",
+        "shortLocation": "芬梨道",
+        "year": "2006",
+        "description": "芬梨道是香港太平山頂的一條路，因為諧音「分離」，有些迷信的戀人在遊覽山頂時會避免經過這條路。偏偏不信邪的情侶篤信自己會愛到地老天荒，他們逆著寒流，趁著夜深，橫衝直撞到山頂來觀光。\n然而日光底下無新事，分分合合再平常不過，所以林夕寫「這山頂何其矜貴，怎可停留一世」。愛到英勇時，人人都以為自己能轟烈做世界之最，夕爺卻以山頂的「高貴」來比喻愛情如同登天梯，「只得很少數伉儷，在這風景線上築關係」。\n平日無趣的風景閃閃發光，不過因為那日某人恰巧陪伴在旁。愛得壯烈的人失戀也無比壯麗，從前與戀人在灣仔謀殺光陰，施勳道的街燈旁留下過寒冷熱吻，山間亂石上處處刻下誓言，彷彿想要與盛世比風光……",
+        "lyric": "寒流襲港，驅車往地老天荒；橫行直闖，車閃過白加道旁；山頂觀賞到的世界，在發光。",
+        "status": "published",
+        "mediaType": "song",
+        "songLink": "https://open.spotify.com/track/7Ea1pCU9smrG0TzKsqQe94",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/7Ea1pCU9smrG0TzKsqQe94",
+        "themeColor": "#6e8d75",
+        "highlightType": "street",
+        "highlightQuery": "Finlay Road, The Peak, Hong Kong",
+        "roadName": "芬梨道",
+        "currentImage": "./assets/current/findlayroad.jpg",
+        "roadAliases": [
+          "Finlay Road",
+          "芬梨道"
+        ],
+        "roadSearchRadius": 1000,
+        "fitFullGeometry": true,
+        "fullGeometryMaxZoom": 16.5,
+        "focusZoom": 16.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1584,
+          22.2817
+        ]
+      },
+      "properties": {
+        "id": "under-the-cherry-blossom-tree",
+        "song": "櫻花樹下",
+        "singer": "張敬軒",
+        "location": "中環 · 置地廣場",
+        "shortLocation": "置地門外",
+        "year": "2008",
+        "description": " ",
+        "lyric": "如有天置地門外，乘電車跨過大海",
+        "status": "published",
+        "mediaType": "song",
+        "songLink": "https://open.spotify.com/track/0rMhHLAcxZdmPP1bFglYH3",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/0rMhHLAcxZdmPP1bFglYH3",
+        "themeColor": "#d98ea7",
+        "highlightType": "point",
+        "focusZoom": 17.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1689,
+          22.2775
+        ]
+      },
+      "properties": {
+        "id": "star-street-two-songs",
+        "song": "集體回憶／半天空檔",
+        "songs": [
+          {
+            "title": "集體回憶",
+            "singer": "楊千嬅",
+            "year": "2007",
+            "lyric": "難道會回到星街",
+            "spotifyEmbed": "https://open.spotify.com/embed/track/5IJfnxViMn9zIwpDSaisaP",
+            "songLink": "https://open.spotify.com/track/5IJfnxViMn9zIwpDSaisaP"
+          },
+          {
+            "title": "半天空檔",
+            "singer": "洪嘉豪",
+            "year": "2022",
+            "lyric": "路過星街，難道又會想起你",
+            "spotifyEmbed": "https://open.spotify.com/embed/track/5NCCX9hbf2BmJ47bSebdc3",
+            "songLink": "https://open.spotify.com/track/5NCCX9hbf2BmJ47bSebdc3"
+          }
+        ],
+        "singer": "楊千嬅 · 洪嘉豪",
+        "location": "灣仔 · 星街",
+        "shortLocation": "星街",
+        "year": "2007／2022",
+        "description": " ",
+        "lyric": "難道會回到星街",
+        "status": "published",
+        "mediaType": "song",
+        "songLink": "https://open.spotify.com/track/5IJfnxViMn9zIwpDSaisaP",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/5IJfnxViMn9zIwpDSaisaP",
+        "themeColor": "#80629a",
+        "highlightType": "street",
+        "highlightQuery": "Star Street, Wan Chai, Hong Kong",
+        "roadName": "星街",
+        "currentImage": "./assets/current/starst.jpg",
+        "roadAliases": [
+          "Star Street",
+          "星街"
+        ],
+        "roadSearchRadius": 700,
+        "fitFullGeometry": true,
+        "fullGeometryMaxZoom": 17,
+        "focusZoom": 17.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17246,
+          22.2759
+        ]
+      },
+      "properties": {
+        "id": "lee-tung-street",
+        "song": "囍帖街",
+        "singer": "謝安琪",
+        "location": "灣仔 · 利東街",
+        "shortLocation": "利東街",
+        "year": "2008",
+        "description": " ",
+        "lyric": "好景不會每日常在\n天梯不會只往上爬\n愛的人沒有一生一世嗎\n大概不需要害怕",
+        "status": "published",
+        "mediaType": "song",
+        "currentImages": [
+          "./assets/current/LeeTungAvenue.jpg",
+          "./assets/current/lee-tung-avenue-01.jpg",
+          "./assets/current/leetungst-hei.jpg"
+        ],
+        "currentCaption": " ",
+        "pastImage": "./assets/past/Leetungst.jpg",
+        "songLink": "",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/3hU9nGBhYJQwvF8BJ4PUcE",
+        "themeColor": "#7a6a9d",
+        "experienceTheme": "lee-tung",
+        "sceneType": "street",
+        "highlightType": "street",
+        "highlightQuery": "Lee Tung Street",
+        "roadName": "利東街",
+        "roadAliases": [
+          "Lee Tung Street",
+          "Lee Tung Avenue"
+        ],
+        "roadSearchRadius": 1800,
+        "roadGeometry": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "properties": {
+                "name": "利東街",
+                "source": "curated-reference"
+              },
+              "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                  [
+                    114.1728,
+                    22.27718
+                  ],
+                  [
+                    114.17279,
+                    22.27698
+                  ],
+                  [
+                    114.17274,
+                    22.27677
+                  ],
+                  [
+                    114.17266,
+                    22.27656
+                  ],
+                  [
+                    114.17257,
+                    22.27634
+                  ],
+                  [
+                    114.17247,
+                    22.27612
+                  ],
+                  [
+                    114.17236,
+                    22.2759
+                  ],
+                  [
+                    114.17225,
+                    22.27565
+                  ],
+                  [
+                    114.17214,
+                    22.27539
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        "fitFullGeometry": true,
+        "fullGeometryMaxZoom": 17.4,
+        "focusZoom": 18.1,
+        "focusBearing": -12,
+        "focusDuration": 1900,
+        "decorationEndpoint": "north",
+        "decorations": [
+          {
+            "type": "double-happiness",
+            "coordinates": [
+              114.1728,
+              22.27718
+            ],
+            "label": "囍"
+          }
+        ],
+        "entranceBearing": -105,
+        "sceneZoom": 18.7,
+        "scenePitch": 78,
+        "sceneBearing": 22,
+        "sceneOffset": [
+          0,
+          160
+        ],
+        "streetHeading": 180,
+        "streetWidth": 15,
+        "roadColor": "#77716c",
+        "buildingDepth": 17,
+        "buildingPalette": [
+          "#ddd2c3",
+          "#c7857b",
+          "#eee4d5",
+          "#b9695f",
+          "#d5aaa0",
+          "#f1e8dc"
+        ],
+        "buildingHeights": [
+          13,
+          16,
+          19,
+          23,
+          29
+        ],
+        "walkZoom": 18.7,
+        "walkPitch": 82,
+        "walkDuration": 1100,
+        "pastSceneEnabled": true,
+        "pastSceneType": "panorama",
+        "pastSceneYear": "清拆前",
+        "pastPanorama": "./assets/panoramas/lee-tung-street-past.png",
+        "pastCaption": "AI協作重構：清拆前的灣仔利東街。",
+        "panoramaPitch": -2,
+        "panoramaYaw": 0,
+        "panoramaHfov": 105
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1718,
+          22.2767
+        ]
+      },
+      "properties": {
+        "id": "queens-road-east",
+        "song": "皇后大道東",
+        "singer": "羅大佑 · 蔣志光",
+        "location": "香港島 · 皇后大道東",
+        "shortLocation": "皇后大道東",
+        "year": "1991",
+        "status": "published",
+        "mediaType": "song",
+        "songLink": "https://open.spotify.com/track/0nd6bs6hsq9hfbkTRmIic0",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/0nd6bs6hsq9hfbkTRmIic0",
+        "themeColor": "#a46b71",
+        "highlightType": "street",
+        "highlightQuery": "Queen's Road East, Wan Chai, Hong Kong",
+        "roadName": "皇后大道東",
+        "roadAliases": [
+          "Queen's Road East",
+          "Queens Road East",
+          "皇后大道東"
+        ],
+        "roadSearchRadius": 2200,
+        "fitFullGeometry": true,
+        "fullGeometryMaxZoom": 14.8,
+        "focusZoom": 14.5,
+        "pastSceneEnabled": true,
+        "pastSceneType": "panorama",
+        "pastSceneYear": "1991年",
+        "pastPanorama": "./assets/panoramas/queens-road-east-past.png",
+        "pastCaption": "AI協作重構：1991年皇后大道東的騎樓唐樓、老店與舊灣仔街坊生活。",
+        "panoramaPitch": -3,
+        "panoramaYaw": 0,
+        "panoramaHfov": 102
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1821,
+          22.2786
+        ]
+      },
+      "properties": {
+        "id": "golden-age-causeway-bay",
+        "currentImages": [
+          "./assets/current/goldmark.jpg",
+          "./assets/current/timesquare.jpg"
+        ],
+        "song": "黃金時代",
+        "singer": "陳奕迅",
+        "location": "銅鑼灣 · 黃金廣場／時代廣場",
+        "shortLocation": "黃金廣場／時代廣場",
+        "year": "1998",
+        "description": "《黃金時代》的靈感源於香港銅鑼灣的兩個商場名，分別是黃金廣場和時代廣場，以此比喻舊與新 [4]。該曲曲風流利炫美，雖然歌詞寫得略顯刻意，但那些許的缺點卻又無法阻止這首歌曲的整體表現 [3]。一方面，林夕寫的歌詞很容易被聽眾所記住，因為歌詞中所講述的愛情，是那個年代熟識的愛情：情侶之間很快便分開，很快又再在一起 [5]。另一方面，該曲如同專輯《我的快樂時代》一樣，寫出了一個置身大時代的故事和態度。\n銅鑼灣的黃金商場和時代廣場。「黃金」是一個很舊、很小的商場。「時代」是一個好新、好大的大型廣場。黃金廣場內分手，在時代門外再聚，是講一種時間的推移，一新一舊時間的演變。「黃金」和「時代」的地理距離很近，就是說由舊去到新，是變得很快的。",
+        "lyric": "黃金廣場內分手\n在時代門外再聚",
+        "status": "published",
+        "mediaType": "song",
+        "songLink": "https://open.spotify.com/track/2hBipddkkmmbwHMVfNfwmt",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/2hBipddkkmmbwHMVfNfwmt",
+        "themeColor": "#c69843",
+        "highlightType": "point",
+        "focusZoom": 17.1,
+        "pastSceneEnabled": true,
+        "pastSceneType": "panorama",
+        "pastSceneYear": "1996年",
+        "pastPanorama": "./assets/panoramas/golden-age-causeway-bay-past.png",
+        "pastCaption": "AI協作重構：1996年銅鑼灣黃金廣場門外，沿軒尼詩道望向剛落成不久的時代廣場。",
+        "panoramaPitch": -4,
+        "panoramaYaw": 0,
+        "panoramaHfov": 103
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.185,
+          22.2805
+        ]
+      },
+      "properties": {
+        "id": "next-station-tin-hau",
+        "song": "下一站天后",
+        "singer": "Twins",
+        "location": "銅鑼灣 · 大丸／百德新街／天后",
+        "shortLocation": "大丸／百德新街",
+        "year": "2003",
+        "lyric": "站在大丸前，細心看看我的路\n再下個車站到天后當然最好\n在百德新街的愛侶",
+        "status": "published",
+        "mediaType": "song",
+        "songLink": "https://open.spotify.com/track/3o2Me99Q8oU3eXr82hi9ns",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/3o2Me99Q8oU3eXr82hi9ns",
+        "themeColor": "#dc879c",
+        "highlightType": "street",
+        "highlightQuery": "Paterson Street, Causeway Bay, Hong Kong",
+        "roadName": "百德新街",
+        "roadAliases": [
+          "Paterson Street",
+          "百德新街"
+        ],
+        "focusZoom": 16.8,
+        "pastSceneEnabled": true,
+        "pastSceneType": "panorama",
+        "pastSceneYear": "約1985年",
+        "pastPanorama": "./assets/panoramas/daimaru-paterson-street-past.png",
+        "pastCaption": "AI協作重構：約1985年銅鑼灣大丸百貨與百德新街的繁華街景。",
+        "panoramaPitch": -3,
+        "panoramaYaw": 0,
+        "panoramaHfov": 102
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.191665,
+          22.282657
+        ]
+      },
+      "properties": {
+        "id": "next-station-tin-hau-station",
+        "currentImage": "./assets/current/tinhau.jpg",
+        "mediaType": "song",
+        "song": "下一站天后",
+        "singer": "Twins",
+        "location": "銅鑼灣 · 天后站",
+        "shortLocation": "天后",
+        "year": "2003",
+        "lyric": "再下個車站到天后，當然最好",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/3o2Me99Q8oU3eXr82hi9ns",
+        "songLink": "https://open.spotify.com/track/3o2Me99Q8oU3eXr82hi9ns",
+        "highlightType": "point",
+        "focusZoom": 17.2,
+        "themeColor": "#dc879c",
+        "pastSceneEnabled": true,
+        "pastSceneType": "panorama",
+        "pastSceneYear": "約1985年",
+        "pastPanorama": "./assets/panoramas/tin-hau-station-past.png",
+        "pastCaption": "AI協作重構：約1985年港島綫通車初期的天后站、銅鑼灣裁判司署與英皇道街景。",
+        "panoramaPitch": -4,
+        "panoramaYaw": 0,
+        "panoramaHfov": 103,
+        "status": "published"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.214,
+          22.219
+        ]
+      },
+      "properties": {
+        "id": "old-fashioned-date-stanley",
+        "currentImage": "./assets/current/stanleymarket.jpg",
+        "song": "老派約會之必要",
+        "singer": "MC張天賦",
+        "location": "赤柱",
+        "shortLocation": "赤柱",
+        "lyric": "怎知道霎眼，就談到赤柱了",
+        "status": "published",
+        "mediaType": "song",
+        "songLink": "https://open.spotify.com/track/3x2hKSUf8O8IqI1shmxGnp",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/3x2hKSUf8O8IqI1shmxGnp",
+        "themeColor": "#ca806e",
+        "highlightType": "point",
+        "focusZoom": 15.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16898,
+          22.29418
+        ]
+      },
+      "properties": {
+        "id": "star-ferry",
+        "song": "夜幕天星",
+        "singer": "C AllStar",
+        "location": "尖沙咀 · 天星碼頭",
+        "shortLocation": "天星碼頭",
+        "year": "2015",
+        "description": "",
+        "lyric": "只想海濱聽聽歌\n容下藝術一刻可不可\n生活難過天天過\n這刻不需要記掛甚麼",
+        "status": "published",
+        "mediaType": "song",
+        "image": "",
+        "songLink": "https://open.spotify.com/track/66b7zTSrJAxvmoff5VaTxl",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/66b7zTSrJAxvmoff5VaTxl",
+        "themeColor": "#7a6a9d",
+        "sceneType": "harbour",
+        "highlightType": "point",
+        "sceneBearing": 170,
+        "roadColor": "#8fa9ad",
+        "buildingColor": "#d8d1c5",
+        "walkZoom": 18.4,
+        "walkPitch": 78,
+        "walkDuration": 1200,
+        "pastSceneEnabled": false,
+        "pastSceneYear": "約1980年",
+        "pastSceneType": "panorama",
+        "pastPanorama": "./assets/panoramas/tsim-sha-tsui-star-ferry-past.png",
+        "pastCaption": "AI協作重構：約1980年尖沙咀天星碼頭、鐘樓、巴士總站與維多利亞港夜景。",
+        "panoramaYaw": 0,
+        "panoramaPitch": -3,
+        "panoramaHfov": 102
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1695,
+          22.2961
+        ]
+      },
+      "properties": {
+        "id": "peking-road-snow",
+        "currentImage": "./assets/current/pekingroad.jpg",
+        "song": "北京道落雪了",
+        "singer": "林二汶",
+        "location": "尖沙咀 · 北京道",
+        "shortLocation": "北京道",
+        "description": "歌曲的創作靈感源於一個白日夢般的幻想，以香港尖沙咀的「北京道」下雪這一不可能發生的奇景為意象，描述了一個身處南方、渴望北上觸摸北京天空的人的心理活動與遠足嚮往，如同「背著行囊一路向北尋找雪景的旅人」。",
+        "status": "published",
+        "mediaType": "song",
+        "songLink": "https://open.spotify.com/track/1WqosfYi5UPeNIBdFXl30c",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/1WqosfYi5UPeNIBdFXl30c",
+        "themeColor": "#a5b6c8",
+        "experienceTheme": "lee-tung",
+        "highlightType": "street",
+        "highlightQuery": "Peking Road, Tsim Sha Tsui, Hong Kong",
+        "roadName": "北京道",
+        "roadAliases": [
+          "Peking Road",
+          "北京道"
+        ],
+        "roadSearchRadius": 650,
+        "fitFullGeometry": true,
+        "fullGeometryMaxZoom": 17,
+        "focusZoom": 17
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1693,
+          22.3014
+        ]
+      },
+      "properties": {
+        "id": "kowloon-park-pool",
+        "song": "九龍公園游泳池",
+        "singer": "my little airport",
+        "location": "尖沙咀 · 九龍公園游泳池",
+        "shortLocation": "九龍公園",
+        "year": "2011",
+        "description": " ",
+        "lyric": "我喜歡九龍公園游泳池\n那裡我不再執著一些往事\n二百年後這裡甚麼也都不是\n宇宙裡有甚麼不是暫時",
+        "status": "published",
+        "mediaType": "song",
+        "image": "",
+        "songLink": "https://open.spotify.com/track/15HvSoZZQfbOlJ2UAM69Vx",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/15HvSoZZQfbOlJ2UAM69Vx",
+        "themeColor": "#7a6a9d",
+        "experienceTheme": "kowloon-park",
+        "sceneType": "park",
+        "highlightType": "area",
+        "highlightQuery": "Kowloon Park",
+        "fitFullGeometry": true,
+        "fullGeometryMaxZoom": 16.2,
+        "areaFocusZoom": 16,
+        "focusDuration": 1300,
+        "focusOffsetRatio": -0.34,
+        "geometryPaddingTop": 80,
+        "geometryPaddingBottom": 165,
+        "geometryRightPaddingRatio": 0.72,
+        "decorations": [
+          {
+            "type": "purple-fountain",
+            "coordinates": [
+              114.170619,
+              22.29965
+            ]
+          }
+        ],
+        "sceneBearing": 100,
+        "roadColor": "#93a783",
+        "buildingColor": "#d8d0c2",
+        "walkZoom": 18.4,
+        "walkPitch": 76,
+        "walkDuration": 1200,
+        "pastSceneEnabled": false,
+        "pastSceneType": "panorama",
+        "pastSceneYear": "",
+        "pastPanorama": "",
+        "panoramaPitch": 2,
+        "panoramaYaw": 0,
+        "panoramaHfov": 102
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1743,
+          22.3025
+        ]
+      },
+      "properties": {
+        "id": "hillwood-road",
+        "currentImage": "./assets/current/hillwoodroad-love.jpg",
+        "song": "山林道",
+        "singer": "謝安琪",
+        "location": "尖沙咀 · 山林道",
+        "shortLocation": "山林道",
+        "description": "山林道（Hillwood Road）是香港一條道路，也是著名的飲食區，位於九龍尖沙咀北部。皆因其錄音室設立於此道上，所以歌曲以此道命名，歌曲講述謝安琪與其音樂團隊出道十年拼搏的經歷。不同的人，在不同的位置，以鬥志和「自己的方式」展現了關懷、愛、堅持、感動和對世界所促成的點點改變。這些都是發展，或許未必是主流「發展觀」的發展而已。在「發展」的高速列車上，你可曾遺忘了窗外的風景？可有留意在鐵路兩旁已近枯萎的樹林？有否想過落車，再悉心灌溉，讓樹林重見茂盛？站在山林道，才發現當年撒下的種子，早已在磚縫間默默地成長。有些路要走過才明白，有時最美的風景，是回頭看見自己當年的足跡，明亮地印在溫婉的長街中，繼續守望著此刻的自己。",
+        "lyric": "我活著只因我愛",
+        "status": "published",
+        "mediaType": "song",
+        "songLink": "https://open.spotify.com/track/0sOUpxvaE3iX1pzCFYMRKC",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/0sOUpxvaE3iX1pzCFYMRKC",
+        "themeColor": "#5e7d68",
+        "highlightType": "street",
+        "highlightQuery": "Hillwood Road, Tsim Sha Tsui, Hong Kong",
+        "roadName": "山林道",
+        "roadAliases": [
+          "Hillwood Road",
+          "山林道"
+        ],
+        "roadSearchRadius": 800,
+        "fitFullGeometry": true,
+        "fullGeometryMaxZoom": 17,
+        "focusZoom": 16.8,
+        "pastSceneEnabled": true,
+        "pastSceneType": "panorama",
+        "pastSceneYear": "1970至1980年代",
+        "pastPanorama": "./assets/panoramas/hillwood-road-past.png",
+        "pastCaption": "AI協作重構：1970至1980年代山林道盡頭的樓梯、舊樓與日本料理店。",
+        "panoramaPitch": -3,
+        "panoramaYaw": 0,
+        "panoramaHfov": 102
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.182,
+          22.3015
+        ]
+      },
+      "properties": {
+        "id": "hong-kong-coliseum",
+        "location": "紅磡 · 香港體育館",
+        "shortLocation": "紅磡體育館",
+        "status": "published",
+        "mediaType": "personal",
+        "title": "香港體育館",
+        "description": "香港體育館於1983年正式啟用，外形上闊下窄，猶如倒置的金字塔。紅館由大型體育場館逐漸成為香港流行音樂與集體記憶的重要地標。",
+        "source": "official",
+        "currentImage": "./assets/current/hung-hom-coliseum.jpg",
+        "themeColor": "#8a6ca3",
+        "highlightType": "point",
+        "landmarkType": "hong-kong-coliseum",
+        "focusZoom": 16.8,
+        "walkZoom": 17.7,
+        "walkPitch": 57,
+        "walkBearing": -24,
+        "walkDuration": 1500,
+        "pastSceneEnabled": true,
+        "pastSceneType": "panorama",
+        "pastSceneYear": "1983年",
+        "pastCaption": "AI協作歷史重構：1983年紅館落成初期，毗鄰紅磡火車站、鐵路月台及巴士與的士集散區。",
+        "pastPanorama": "./assets/panoramas/hung-hom-coliseum-1983.png",
+        "panoramaPitch": -4,
+        "panoramaYaw": 4,
+        "panoramaHfov": 105
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1716,
+          22.3103
+        ]
+      },
+      "properties": {
+        "id": "yau-tsim-mong-kam-mo-ling",
+        "song": "油尖旺金毛玲",
+        "singer": "Serrini",
+        "location": "九龍 · 油尖旺",
+        "shortLocation": "油尖旺",
+        "year": "2016",
+        "description": "歌曲以夜場陪唱女「金毛玲」為主角，描繪其穿梭於油尖旺區的職場際遇與情感波瀾：面對氣質獨特的客人時，克制的情愫與現實的疏離交織成單相思，借社交媒體與深夜獨白袒露心事。歌詞融合粵語口語、文言及英語，形成「三及第」文體風格，穿插日語念白及納蘭性德詩句，以霓虹夜色、劏房生活等本土符號構建市井詩意，呈現都市邊緣女性的生存境遇。",
+        "lyric": "油尖旺金毛玲，看盡世間事",
+        "status": "published",
+        "mediaType": "song",
+        "songLink": "https://open.spotify.com/track/15CQH3IAmadZIEJ4KlaYdM",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/15CQH3IAmadZIEJ4KlaYdM",
+        "themeColor": "#bf6b91",
+        "highlightType": "point",
+        "focusZoom": 14.2,
+        "pastSceneEnabled": true,
+        "pastSceneType": "panorama",
+        "pastSceneYear": "1980至1990年代",
+        "pastPanorama": "./assets/panoramas/yau-tsim-mong-past.png",
+        "pastCaption": "AI協作重構：1980至1990年代油麻地與旺角的霓虹夜色、街檔與城市人物。",
+        "panoramaPitch": -4,
+        "panoramaYaw": 0,
+        "panoramaHfov": 105
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1694,
+          22.3193
+        ]
+      },
+      "properties": {
+        "id": "nathan-road",
+        "song": "彌敦道",
+        "singer": "洪卓立",
+        "location": "油尖旺 · 彌敦道",
+        "shortLocation": "彌敦道",
+        "year": "",
+        "description": "",
+        "lyric": "街邊太多人與車\n繁華鬧市人醉夜\n害怕下班等很久\n懷念很久也不夠",
+        "status": "published",
+        "mediaType": "song",
+        "currentImage": "./assets/current/nathanroad.jpg",
+        "songLink": "https://open.spotify.com/track/2HRMHz6NgX2p2BehbjAxN4",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/2HRMHz6NgX2p2BehbjAxN4",
+        "themeColor": "#7a6a9d",
+        "experienceTheme": "nathan-road",
+        "sceneType": "street",
+        "highlightType": "street",
+        "highlightQuery": "Nathan Road",
+        "roadName": "彌敦道",
+        "roadAliases": [
+          "Nathan Road"
+        ],
+        "roadSearchRadius": 12000,
+        "fitFullGeometry": true,
+        "fullGeometryMaxZoom": 13.8,
+        "decorations": [
+          {
+            "type": "traffic-light",
+            "coordinates": [
+              114.16955,
+              22.32015
+            ]
+          },
+          {
+            "type": "traffic-light",
+            "coordinates": [
+              114.16905,
+              22.31795
+            ]
+          },
+          {
+            "type": "crowd",
+            "coordinates": [
+              114.16918,
+              22.32005
+            ]
+          },
+          {
+            "type": "crowd",
+            "coordinates": [
+              114.16972,
+              22.31865
+            ]
+          },
+          {
+            "type": "street-traffic",
+            "coordinates": [
+              114.16942,
+              22.3193
+            ]
+          }
+        ],
+        "sceneBearing": 5,
+        "roadColor": "#9b8c7b",
+        "buildingColor": "#d8cdc0",
+        "walkZoom": 18.5,
+        "walkPitch": 80,
+        "walkDuration": 1100,
+        "pastSceneEnabled": true,
+        "pastSceneType": "panorama",
+        "pastSceneYear": "1970至1980年代",
+        "pastPanorama": "./assets/panoramas/nathan-road-past.png",
+        "pastCaption": "AI協作重構：1970至1980年代雨夜的彌敦道。",
+        "panoramaPitch": -4,
+        "panoramaYaw": 0,
+        "panoramaHfov": 108
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1751,
+          22.312
+        ]
+      },
+      "properties": {
+        "id": "victory-avenue",
+        "currentImage": "./assets/current/victoryavenue.jpg",
+        "song": "流淚行勝利道",
+        "singer": "許志安",
+        "location": "何文田 · 勝利道",
+        "shortLocation": "勝利道",
+        "description": "雖然生活上總遇到不如意事，應該抱著正面的態度去面對將來及解決問題，總不能時時刻刻覺得生活不如意，因為定必有天使在你附近。\n這首歌曲旋律性的優質、上口以及內容和情懷的正面向上，其中一句「流淚行勝利道，別再做愛情奴」有一種讓人從谷底反彈起來的動力。",
+        "lyric": "流淚行勝利道，別再做愛情奴；就當用一次挫敗，終於發現天更高。",
+        "status": "published",
+        "mediaType": "song",
+        "songLink": "https://open.spotify.com/track/65MoWG4hVZf20qZ4hZJM4O",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/65MoWG4hVZf20qZ4hZJM4O",
+        "themeColor": "#bd756e",
+        "highlightType": "street",
+        "highlightQuery": "Victory Avenue, Ho Man Tin, Hong Kong",
+        "roadName": "勝利道",
+        "roadAliases": [
+          "Victory Avenue",
+          "勝利道",
+          "胜利道"
+        ],
+        "roadSearchRadius": 900,
+        "fitFullGeometry": true,
+        "fullGeometryMaxZoom": 16.8,
+        "focusZoom": 16.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16375,
+          22.32523
+        ]
+      },
+      "properties": {
+        "id": "sycamore-pine-street",
+        "currentImage": "./assets/current/sycamorest.jpg",
+        "song": "詩歌舞街",
+        "singer": "my little airport",
+        "location": "大角咀 · 詩歌舞街",
+        "shortLocation": "詩歌舞街",
+        "description": "九龍的旺角荔枝角地區，隨著城市的發展，新路名很多以樹木命名，例如：橡樹街、杉樹街、榆樹街等等。此街道本來與附近其他街道一樣是以植物名命名，而 Sycamore 即無花果，但無花果之名不吉利，尤其是當時想對新婚人士想在那裡置業，所以改為音譯「詩歌舞」。",
+        "lyric": "只有散步我們才真正聊天，詩歌舞街地上有著光點閃閃。",
+        "status": "published",
+        "mediaType": "song",
+        "songLink": "https://open.spotify.com/track/45rZ0CtRR470rAOFiWJNeM",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/45rZ0CtRR470rAOFiWJNeM",
+        "themeColor": "#c49d55",
+        "highlightType": "street",
+        "highlightQuery": "Sycamore Street, Tai Kok Tsui, Hong Kong",
+        "roadName": "詩歌舞街",
+        "roadAliases": [
+          "Sycamore Street",
+          "詩歌舞街",
+          "诗歌舞街"
+        ],
+        "roadSearchRadius": 900,
+        "fitFullGeometry": true,
+        "fullGeometryMaxZoom": 17,
+        "focusZoom": 16.9,
+        "pastSceneEnabled": true,
+        "pastSceneType": "panorama",
+        "pastSceneYear": "1970至1980年代",
+        "pastPanorama": "./assets/panoramas/sycamore-street-past.png",
+        "pastCaption": "AI協作重構：1970至1980年代大角咀詩歌舞街的唐樓、小工場與街坊生活。",
+        "panoramaPitch": -4,
+        "panoramaYaw": 0,
+        "panoramaHfov": 104
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.165,
+          22.333
+        ]
+      },
+      "properties": {
+        "id": "nam-cheong-street-prince",
+        "currentImage": "./assets/current/namcheongst.jpg",
+        "song": "南昌街王子",
+        "singer": "薛凱琪",
+        "location": "深水埗 · 南昌街",
+        "shortLocation": "南昌街",
+        "description": "通過香港深水埗南昌街的市井意象，解構傳統王子童話，傳遞從追求夢幻愛情到珍視現實陪伴的情感觀轉變。",
+        "lyric": "你問南昌街乃幸福終極嗎",
+        "status": "published",
+        "mediaType": "song",
+        "songLink": "https://open.spotify.com/track/2GBHNTR3jBDY4oa4MVQ9AZ",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/2GBHNTR3jBDY4oa4MVQ9AZ",
+        "themeColor": "#768ca8",
+        "highlightType": "street",
+        "highlightQuery": "Nam Cheong Street, Sham Shui Po, Hong Kong",
+        "roadName": "南昌街",
+        "roadAliases": [
+          "Nam Cheong Street",
+          "南昌街"
+        ],
+        "roadSearchRadius": 2200,
+        "fitFullGeometry": true,
+        "fullGeometryMaxZoom": 14.8,
+        "focusZoom": 14.5,
+        "pastSceneEnabled": true,
+        "pastSceneType": "panorama",
+        "pastSceneYear": "1970至1980年代",
+        "pastPanorama": "./assets/panoramas/nam-cheong-street-past.png",
+        "pastCaption": "AI協作重構：1970至1980年代深水埗南昌街的唐樓、市集與居民生活。",
+        "panoramaPitch": -5,
+        "panoramaYaw": 0,
+        "panoramaHfov": 103
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1762,
+          22.3372
+        ]
+      },
+      "properties": {
+        "id": "romantic-kowloon-tong",
+        "song": "浪漫九龍塘",
+        "singer": "my little airport",
+        "location": "九龍塘",
+        "shortLocation": "九龍塘",
+        "description": "圍繞香港九龍塘地區時租酒店展開敘事。作品通過青年情感議題的探討，展現特定時代背景下香港年輕群體的生活狀態。林阿P以直白筆觸記錄都市愛情中的猶豫與矛盾，相關創作思路在歌詞教學資料中呈現廣州話拼音、教院拼音、耶魯拼音三種注音版本。",
+        "lyric": "我們終於去到了九龍塘",
+        "status": "published",
+        "mediaType": "song",
+        "songLink": "https://open.spotify.com/track/4bLGt8gA8KrKTQhqbcbvAM",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/4bLGt8gA8KrKTQhqbcbvAM",
+        "themeColor": "#b47c98",
+        "highlightType": "point",
+        "focusZoom": 15.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1883,
+          22.3173
+        ]
+      },
+      "properties": {
+        "id": "to-kwa-wan",
+        "song": "土瓜灣情歌",
+        "singer": "my little airport",
+        "location": "九龍城 · 土瓜灣",
+        "shortLocation": "土瓜灣",
+        "year": "2014",
+        "description": " ",
+        "lyric": "我此刻仍留在土瓜灣\n想著未來怎麼辦",
+        "status": "published",
+        "mediaType": "song",
+        "currentImages": [
+          "./assets/current/tokuawan-apple.jpg",
+          "./assets/current/tokuawan-lyrics.jpg"
+        ],
+        "songLink": "https://open.spotify.com/track/1hnWusq6OGMuRsKvcmFLl8",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/1hnWusq6OGMuRsKvcmFLl8",
+        "themeColor": "#7a6a9d",
+        "experienceTheme": "to-kwa-wan",
+        "sceneType": "area",
+        "highlightType": "area",
+        "highlightQuery": "To Kwa Wan",
+        "fitFullGeometry": true,
+        "fullGeometryMaxZoom": 15.7,
+        "decorations": [
+          {
+            "type": "red-apple-wall",
+            "coordinates": [
+              114.18799,
+              22.31713
+            ],
+            "label": "紅蘋果街市"
+          }
+        ],
+        "sceneBearing": 32,
+        "roadColor": "#9b8977",
+        "buildingColor": "#d6c8b8",
+        "walkZoom": 18.5,
+        "walkPitch": 80,
+        "walkDuration": 1150,
+        "pastSceneEnabled": true,
+        "pastSceneType": "panorama",
+        "pastSceneYear": "1970至1980年代",
+        "pastPanorama": "./assets/panoramas/to-kwa-wan-past.png",
+        "pastCaption": "AI協作重構：1970至1980年代的土瓜灣街市與社區生活。",
+        "panoramaPitch": -3,
+        "panoramaYaw": 0,
+        "panoramaHfov": 105
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.214,
+          22.315
+        ]
+      },
+      "properties": {
+        "id": "wai-yip-street",
+        "currentImages": [
+          "./assets/current/waiyipst.jpg",
+          "./assets/current/waiyipop.jpg"
+        ],
+        "song": "偉業街",
+        "singer": "胡鴻鈞",
+        "location": "觀塘 · 偉業街",
+        "shortLocation": "偉業街",
+        "year": "2018",
+        "description": "夢想是甜的，但前往夢想的路上總叫人吃盡苦頭。現實生活有很多制肘，令我們不能專心一意去追夢；與想像中的落差，令我們漸漸失去堅持的勇氣。追夢不易，要追一個音樂夢更難。這條路並不平坦，要面對的不只困難，還要學會克服孤獨。路上會遇見很多人，善良的人會跟你講聲「加油」，但同時要接受有些人會瞧不起你，甚至打擊你。而真正懂你，能有共鳴的人又有多少？孤獨不會馬上摧殘你的夢，但會慢慢動搖你的心。唯有緊記初衷，才能捱過所有打擊，越過一切挑戰，然後，夢想終會成真。",
+        "lyric": "只要渴望仍然要去追，任我想這闕情銘可寄誰；自勉一句，足跡隨年月爭取不退。",
+        "status": "published",
+        "mediaType": "song",
+        "songLink": "https://open.spotify.com/track/0WPFGLT8rEAh5P4DeZ0v2i",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/0WPFGLT8rEAh5P4DeZ0v2i",
+        "themeColor": "#867864",
+        "highlightType": "street",
+        "highlightQuery": "Wai Yip Street, Kwun Tong, Hong Kong",
+        "roadName": "偉業街",
+        "roadAliases": [
+          "Wai Yip Street",
+          "偉業街",
+          "伟业街"
+        ],
+        "roadSearchRadius": 2500,
+        "fitFullGeometry": true,
+        "fullGeometryMaxZoom": 14.5,
+        "focusZoom": 14.2,
+        "pastSceneEnabled": true,
+        "pastSceneType": "panorama",
+        "pastSceneYear": "1970至1980年代",
+        "pastPanorama": "./assets/panoramas/wai-yip-street-past.png",
+        "pastCaption": "AI協作重構：1970至1980年代觀塘偉業街的工業區與下班人潮。",
+        "panoramaPitch": -5,
+        "panoramaYaw": 0,
+        "panoramaHfov": 102
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1073,
+          22.3681
+        ]
+      },
+      "properties": {
+        "id": "wing-shun-street-39",
+        "currentImage": "./assets/current/wingshunst39.jpg",
+        "song": "永順街39號",
+        "singer": "盧瀚霆",
+        "location": "荃灣 · 永順街",
+        "shortLocation": "永順街39號",
+        "description": "永順街39號是Anson Lo就讀的小學地址。用上這個地址做歌名全因他的初戀發生在小六，希望透過歌曲分享這段Puppy Love，以表達他對愛情的遺憾與初衷。\n無論是單戀還是相戀，初戀是每個人都曾經歷，而大多數總好像是失敗收場。或許愛情就像人生，不一定一次成功，需要經歷跌跌撞撞，再尋回自己當日對愛情的初衷。",
+        "lyric": "或已經一起，過了完美的\n很多秋與冬\n唯願與你，牽手到老，其餘的\n拉扯皆折衷",
+        "status": "published",
+        "mediaType": "song",
+        "songLink": "https://open.spotify.com/track/3b4dQtIVyVhQdbYVfrik0k",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/3b4dQtIVyVhQdbYVfrik0k",
+        "themeColor": "#8e759e",
+        "highlightType": "street",
+        "highlightQuery": "39 Wing Shun Street, Tsuen Wan, Hong Kong",
+        "roadName": "永順街",
+        "roadAliases": [
+          "Wing Shun Street",
+          "永順街"
+        ],
+        "roadSearchRadius": 1000,
+        "fitFullGeometry": true,
+        "fullGeometryMaxZoom": 16.8,
+        "focusZoom": 16.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.98412,
+          22.4674
+        ]
+      },
+      "properties": {
+        "id": "lau-fau-shan",
+        "song": "我在流浮山滴眼水",
+        "singer": "Serrini",
+        "location": "元朗 · 流浮山",
+        "shortLocation": "流浮山",
+        "year": "2021",
+        "description": "",
+        "lyric": "我在流浮山滴眼水\n霎眼你我已廿幾歲\n流浮山落日看得心醉",
+        "status": "published",
+        "mediaType": "song",
+        "image": "",
+        "songLink": "https://open.spotify.com/track/5x9Clj56YLmklm3Zikx2iF",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/5x9Clj56YLmklm3Zikx2iF",
+        "themeColor": "#7a6a9d",
+        "experienceTheme": "lau-fau-shan",
+        "sceneType": "coast",
+        "highlightType": "area",
+        "highlightQuery": "Lau Fau Shan",
+        "decorations": [
+          {
+            "type": "lau-fau-sunset",
+            "coordinates": [
+              113.9827,
+              22.468
+            ]
+          }
+        ],
+        "sceneBearing": 265,
+        "roadColor": "#a69a83",
+        "buildingColor": "#d4c9b9",
+        "walkZoom": 18.1,
+        "walkPitch": 74,
+        "walkDuration": 1250,
+        "pastSceneEnabled": false,
+        "pastSceneType": "panorama",
+        "pastSceneYear": "",
+        "pastPanorama": "",
+        "panoramaPitch": 2,
+        "panoramaYaw": 0,
+        "panoramaHfov": 102
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.27135,
+          22.3811
+        ]
+      },
+      "properties": {
+        "id": "sai-kung-bakery",
+        "currentImage": "./assets/current/saikung-halfmoonbay.jpg",
+        "title": "西貢菠蘿包",
+        "shopName": "Sai Kung Cafe & Bakery",
+        "location": "西貢 · 西貢咖啡餅店",
+        "shortLocation": "西貢咖啡餅店",
+        "address": "西貢海傍廣場2號金寶閣地下6至7號舖",
+        "status": "published",
+        "archiveType": "archive",
+        "mediaType": "food",
+        "foodType": "pineapple-bun",
+        "source": "official",
+        "image": "",
+        "themeColor": "#d99445",
+        "sceneType": "food",
+        "highlightType": "point",
+        "walkZoom": 18.2,
+        "walkPitch": 55,
+        "walkDuration": 1250
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.028,
+          22.331
+        ]
+      },
+      "properties": {
+        "id": "sunny-bay-farewell",
+        "currentImage": "./assets/current/sunnybay-disneyland.jpg",
+        "song": "欣澳別戀",
+        "singer": "吳雨霏",
+        "location": "大嶼山 · 欣澳",
+        "shortLocation": "欣澳",
+        "lyric": "分開分得太早\n天荒不會地老",
+        "status": "published",
+        "mediaType": "song",
+        "songLink": "https://open.spotify.com/track/6ZLTV6wHJKEo4UuC1Xbazu",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/6ZLTV6wHJKEo4UuC1Xbazu",
+        "themeColor": "#759db0",
+        "highlightType": "point",
+        "focusZoom": 15.5,
+        "pastSceneEnabled": true,
+        "pastSceneType": "panorama",
+        "pastSceneYear": "2005年",
+        "pastPanorama": "./assets/panoramas/sunny-bay-disney-opening-2005.png",
+        "pastCaption": "AI協作重構：2005年香港迪士尼開幕期，在欣澳站A出口等待同行的人，最後獨自乘上迪士尼綫。",
+        "panoramaPitch": -3,
+        "panoramaYaw": 0,
+        "panoramaHfov": 102
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.187,
+          22.352
+        ]
+      },
+      "properties": {
+        "id": "shap-ngaa-laa",
+        "song": "山旮旯",
+        "singer": "馮允謙",
+        "location": "深水灣／淺水灣／獅子山",
+        "shortLocation": "獅子山",
+        "lyric": "深水灣淺水灣獅子山\n你以為定會等\n生死興衰也有時辰\n你眼前人還請捉緊捉緊",
+        "status": "published",
+        "mediaType": "song",
+        "songLink": "https://open.spotify.com/track/6vLeClPziJQ3Z0wifEzMYe",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/6vLeClPziJQ3Z0wifEzMYe",
+        "themeColor": "#66866c",
+        "highlightType": "point",
+        "focusZoom": 14.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15247,
+          22.28436
+        ]
+      },
+      "properties": {
+        "id": "swipe-tap-love-sing-heung-yuen",
+        "mediaType": "television",
+        "title": "愛我請留言",
+        "creator": "香港電視廣播有限公司",
+        "location": "中環 · 勝香園",
+        "shortLocation": "勝香園",
+        "year": "2014",
+        "excerpt": "我還是喜歡吃番茄牛肉通粉。番茄牛肉通粉就是番茄牛肉通粉，就算番茄牛肉公仔麵再好吃，也不是番茄牛肉通粉，是吧？",
+        "description": "",
+        "currentImage": "./assets/current/aiwoqingliuyan.jpg",
+        "videoLink": "https://www.youtube.com/watch?v=D8a2UqYafoU",
+        "highlightType": "point",
+        "focusZoom": 18.2,
+        "themeColor": "#c95743",
+        "status": "published"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.2002,
+          22.2912
+        ]
+      },
+      "properties": {
+        "id": "sammi-unconsciously-north-point",
+        "currentImage": "./assets/current/northpoint.jpg",
+        "mediaType": "song",
+        "song": "不經不覺",
+        "singer": "鄭秀文",
+        "location": "香港島 · 北角",
+        "shortLocation": "北角",
+        "year": "2000",
+        "lyric": "曾和你無聊白晝在北角散步",
+        "description": "",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/6x6i2YQH5VxMSMEa2Mndb5",
+        "songLink": "https://open.spotify.com/track/6x6i2YQH5VxMSMEa2Mndb5",
+        "highlightType": "point",
+        "focusZoom": 16.8,
+        "themeColor": "#b7839b",
+        "status": "published"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.9414,
+          22.2892
+        ]
+      },
+      "properties": {
+        "id": "shine-tung-chung-sunny-day",
+        "mediaType": "song",
+        "song": "東涌日和",
+        "singer": "Shine",
+        "location": "港鐵沿線 · 旺角／樂富／將軍澳／青衣／東涌",
+        "shortLocation": "東涌",
+        "year": "2002",
+        "lyric": "列車中，也可理想達到\n從旺角直到樂富，轉眼衝出將軍澳\n東涌風景也尚算能獨有",
+        "description": "",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/08WlDqAZ70szN6tsMz21C4",
+        "songLink": "https://open.spotify.com/track/08WlDqAZ70szN6tsMz21C4",
+        "highlightType": "point",
+        "focusZoom": 15.8,
+        "themeColor": "#74a9b8",
+        "status": "published"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.155525,
+          22.280972
+        ]
+      },
+      "properties": {
+        "id": "andy-hui-no-christmas-lan-kwai-fong",
+        "mediaType": "song",
+        "song": "今年沒聖誕",
+        "singer": "許志安",
+        "location": "中環 · 蘭桂坊",
+        "shortLocation": "蘭桂坊",
+        "year": "2004",
+        "lyric": "蘭桂坊有雪嗎\n何以今晚約她",
+        "description": "",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/04uDll4nAJEYPgUzzd3WOG",
+        "songLink": "https://open.spotify.com/track/04uDll4nAJEYPgUzzd3WOG",
+        "highlightType": "point",
+        "focusZoom": 18,
+        "themeColor": "#a9bfd1",
+        "status": "published"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.19055,
+          22.27838
+        ]
+      },
+      "properties": {
+        "id": "alfred-hui-miraculous-journey-haven-street",
+        "currentImage": "./assets/current/havenst.jpg",
+        "mediaType": "song",
+        "song": "神奇之旅",
+        "singer": "許廷鏗",
+        "location": "銅鑼灣 · 希雲街",
+        "shortLocation": "希雲街",
+        "year": "2017",
+        "lyric": "路過希雲街\n當它冰島札幌",
+        "description": "",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/33fanQprdVZBcXejPlh5Wg",
+        "songLink": "https://open.spotify.com/track/33fanQprdVZBcXejPlh5Wg",
+        "highlightType": "street",
+        "roadName": "希雲街",
+        "roadAliases": [
+          "Haven Street",
+          "希雲街"
+        ],
+        "highlightQuery": "Haven Street, Causeway Bay, Hong Kong",
+        "roadSearchRadius": 450,
+        "fitFullGeometry": true,
+        "fullGeometryMaxZoom": 18,
+        "focusZoom": 17.5,
+        "themeColor": "#719fa1",
+        "pastSceneEnabled": true,
+        "pastSceneType": "panorama",
+        "pastSceneYear": "約1970年代初",
+        "pastPanorama": "./assets/panoramas/haven-street-past.png",
+        "pastCaption": "AI協作重構：約1970年代初雨後的希雲街，街上仍可見舊式住宅、車房、印刷作坊與街坊小店。",
+        "panoramaPitch": -3,
+        "panoramaYaw": 0,
+        "panoramaHfov": 102,
+        "status": "published"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.2708,
+          22.3815
+        ]
+      },
+      "properties": {
+        "id": "gigi-leung-miss-sai-kung",
+        "mediaType": "song",
+        "song": "西貢小姐",
+        "singer": "梁詠琪",
+        "location": "新界 · 西貢海旁",
+        "shortLocation": "西貢",
+        "year": "2001",
+        "lyric": "稍稍加速歸家看夕陽還有樹\n星光閃閃散落長堤邊",
+        "description": "",
+        "spotifyEmbed": "https://open.spotify.com/embed/track/0DwuDFcg1JEwTfmXpNZwE8",
+        "songLink": "https://open.spotify.com/track/0DwuDFcg1JEwTfmXpNZwE8",
+        "highlightType": "point",
+        "focusZoom": 16.5,
+        "themeColor": "#86a98d",
+        "status": "published"
+      }
+    }
+  ]
+}
