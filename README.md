@@ -1,5 +1,7 @@
 # Urban Senses of Hong Kong
 
+![Urban Senses of Hong Kong interactive map](./assets/project-cover.png)
+
 An interactive map-based digital archive that explores Hong Kong through Cantopop, screen memories, local food, public transport and community-contributed stories.
 
 [Explore the Live Project](https://daisywuh.github.io/Urban-Senses-of-Hong-Kong/)
