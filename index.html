@@ -16,6 +16,16 @@
   <!-- Pannellum 全景樣式 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.css">
 
+  <!-- Three.js 3D 街景 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- Three.js 3D 街景 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Three.js GLTF / GLB 模型載入器 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/loaders/GLTFLoader.js"></script>
+
+  <script src="./street-scene.js" defer></script>
+
   <!-- 新增食物圖標 -->
   <script src="./food-icons.js" defer></script>
 
@@ -374,6 +384,11 @@
 
           <button id="story-light-button" class="story-action-button story-light-button" type="button">
             點亮這裡
+          </button>
+
+          <button id="story-enter-3d-button" class="story-action-button story-enter-3d-button" type="button" hidden>
+            <span aria-hidden="true">↗</span>
+            進入 3D 街景
           </button>
 
           <button id="edit-contribution-button" class="story-action-button edit-contribution-button" type="button"
@@ -999,6 +1014,21 @@
       </button>
     </div>
   </div>
+  <!-- ========================================
+       沉浸式 3D 街景（V1）
+  ========================================= -->
+  <section id="street-scene" class="street-scene" aria-hidden="true" aria-label="囍帖街三維街景">
+    <div id="street-scene-canvas" class="street-scene-canvas"></div>
+    <header class="street-scene-ui">
+      <div>
+        <p>城市記憶 · 沉浸街景</p>
+        <h2>囍帖街 · 利東街</h2>
+        <span>拖動滑鼠環視 · 滾輪調整視角</span>
+      </div>
+      <button id="street-scene-close" type="button">← 返回地圖</button>
+    </header>
+    <div class="street-scene-vignette" aria-hidden="true"></div>
+  </section>
 </body>
 
 </html>
