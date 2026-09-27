@@ -215,6 +215,10 @@ const pageElements = {
     "#story-light-button"
   ),
 
+  storyEnter3DButton: document.querySelector(
+    "#story-enter-3d-button"
+  ),
+
   editContributionButton: document.querySelector(
     "#edit-contribution-button"
   ),
@@ -4885,6 +4889,11 @@ function openStoryPanel(place) {
   updateStoryLightButton(
     information.id
   );
+
+  if (pageElements.storyEnter3DButton) {
+    pageElements.storyEnter3DButton.hidden =
+      information.experienceTheme !== "lee-tung";
+  }
 
   const isEditableContribution =
     information.source ===
@@ -9967,3 +9976,25 @@ window.addEventListener(
     }
   }
 );
+
+// ============================================================
+// 3D STREET SCENE BUTTON
+// ============================================================
+
+document.addEventListener("click", (event) => {
+  const button = event.target.closest("#story-enter-3d-button");
+
+  if (!button) return;
+
+  event.preventDefault();
+  event.stopPropagation();
+
+  if (
+    window.UrbanStreetScene &&
+    typeof window.UrbanStreetScene.open === "function"
+  ) {
+    window.UrbanStreetScene.open();
+  } else {
+    console.error("UrbanStreetScene 尚未載入");
+  }
+});
