@@ -8398,3 +8398,70 @@ body.about-project-open {
 .light-progress > span {
   margin-bottom: 4px;
 }
+/* ========================================
+   沉浸式 3D 街景 V1
+======================================== */
+.story-enter-3d-button {
+  background: linear-gradient(135deg, #5f4a86, #7b65a3);
+  color: #fff;
+  border-color: rgba(95, 74, 134, 0.35);
+}
+
+.street-scene {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  visibility: hidden;
+  opacity: 0;
+  background: #dce8ef;
+  transition: opacity 420ms ease, visibility 420ms ease;
+}
+
+.street-scene.is-open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.street-scene-canvas,
+.street-scene-canvas canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.street-scene-ui {
+  position: absolute;
+  inset: 0 0 auto 0;
+  z-index: 3;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px 30px;
+  color: #fff;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(20, 23, 29, 0.52), transparent);
+}
+
+.street-scene-ui p { margin: 0 0 5px; font-size: 12px; letter-spacing: .14em; }
+.street-scene-ui h2 { margin: 0 0 6px; font-size: clamp(24px, 3vw, 40px); }
+.street-scene-ui span { font-size: 13px; opacity: .82; }
+.street-scene-ui button {
+  pointer-events: auto;
+  border: 1px solid rgba(255,255,255,.45);
+  border-radius: 999px;
+  padding: 11px 17px;
+  background: rgba(24, 26, 31, .62);
+  backdrop-filter: blur(12px);
+  color: #fff;
+  cursor: pointer;
+}
+
+.street-scene-vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  box-shadow: inset 0 0 110px rgba(22, 20, 28, .20);
+}
+
+body.street-scene-active { overflow: hidden; }
